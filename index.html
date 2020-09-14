@@ -15,15 +15,59 @@
     <script src="app.js"></script>
   </head>
   <body>
-  <div class="jumbotron"><h1>Chiruta - Service Request</h1>
+  <div class="jumbotron">
+    <h1>Chiruta - Service Request</h1>
+
+      <div>
+        <button class="btn btn-success">Request Service</button> 
+        <button class="btn btn-primary">Edit Profile</button>
+        <button class="btn btn-primary">Logout</button> 
+    </div>
   </div>
 
-  <input
-  id="pac-input"
-  class="controls"
-  type="text"
-  placeholder="Enter Your Address"
-/>
+  <form style="width:75%; margin:auto;">
+<!--     <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div> -->
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Service Type</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Repair</option>
+        <option>Delivery</option>
+        <option>Baby Sitting</option>
+        <option> Service 4</option>
+        <option>Service 5</option>
+      </select>
+    </div>
+    <div class="form-group">  <label>Address</label> <input
+      id="pac-input"
+      class="form-control"
+      style="width:100%; margin:auto;"
+      type="text"
+      placeholder="Enter Your Address"
+    /></div>
+
+    <div class="form-group"> <label>Service Date</label><input  class="form-control" type="date"/></div>
+    <div class="form-group"><label>Service Time</label><input  class="form-control" type="time"/></div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Price Range</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Select Preferred Price</option>
+        <option>$41 to $60</option>
+        <option>$61 to $80</option>
+        <option> $81 to $100</option>
+        <option>option 5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Comments to Service Provider</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+    </div>
+    <button type="reset" class="btn btn-primary">Reset</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
 <div id="map"></div>
 
   </body>
